@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76EFC26E8606232AB73E3C23 /* Pods_UserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD1CA09623A2C71DEE9E39F /* Pods_UserInterface.framework */; };
+		A04620D022D4A26100B6DD34 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A04620CF22D4A26100B6DD34 /* GoogleService-Info.plist */; };
 		A09B6A0422D49EEC00ACA87E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09B6A0322D49EEC00ACA87E /* AppDelegate.swift */; };
 		A09B6A0622D49EEC00ACA87E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09B6A0522D49EEC00ACA87E /* ViewController.swift */; };
 		A09B6A0922D49EEC00ACA87E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09B6A0722D49EEC00ACA87E /* Main.storyboard */; };
@@ -15,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E97FE641871EC35C28B424C /* Pods-UserInterface.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UserInterface.release.xcconfig"; path = "Target Support Files/Pods-UserInterface/Pods-UserInterface.release.xcconfig"; sourceTree = "<group>"; };
+		6DD1CA09623A2C71DEE9E39F /* Pods_UserInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UserInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A04620CF22D4A26100B6DD34 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A09B6A0022D49EEC00ACA87E /* UserInterface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserInterface.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A09B6A0322D49EEC00ACA87E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A09B6A0522D49EEC00ACA87E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		A09B6A0A22D49EED00ACA87E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A09B6A0D22D49EED00ACA87E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A09B6A0F22D49EED00ACA87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE7B8EBCF26C94D8117A68E4 /* Pods-UserInterface.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UserInterface.debug.xcconfig"; path = "Target Support Files/Pods-UserInterface/Pods-UserInterface.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76EFC26E8606232AB73E3C23 /* Pods_UserInterface.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		896034E31E8AA5618D703328 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DD1CA09623A2C71DEE9E39F /* Pods_UserInterface.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A09B69F722D49EEC00ACA87E = {
 			isa = PBXGroup;
 			children = (
 				A09B6A0222D49EEC00ACA87E /* UserInterface */,
 				A09B6A0122D49EEC00ACA87E /* Products */,
+				DCAEA63CD283295F8980D890 /* Pods */,
+				896034E31E8AA5618D703328 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +77,18 @@
 				A09B6A0A22D49EED00ACA87E /* Assets.xcassets */,
 				A09B6A0C22D49EED00ACA87E /* LaunchScreen.storyboard */,
 				A09B6A0F22D49EED00ACA87E /* Info.plist */,
+				A04620CF22D4A26100B6DD34 /* GoogleService-Info.plist */,
 			);
 			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		DCAEA63CD283295F8980D890 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE7B8EBCF26C94D8117A68E4 /* Pods-UserInterface.debug.xcconfig */,
+				0E97FE641871EC35C28B424C /* Pods-UserInterface.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A09B6A1222D49EED00ACA87E /* Build configuration list for PBXNativeTarget "UserInterface" */;
 			buildPhases = (
+				1DA991C35A667AE4B3D383DF /* [CP] Check Pods Manifest.lock */,
 				A09B69FC22D49EEC00ACA87E /* Sources */,
 				A09B69FD22D49EEC00ACA87E /* Frameworks */,
 				A09B69FE22D49EEC00ACA87E /* Resources */,
+				5A293C80EE7D6ECB16EA9155 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,10 +154,53 @@
 				A09B6A0E22D49EED00ACA87E /* LaunchScreen.storyboard in Resources */,
 				A09B6A0B22D49EED00ACA87E /* Assets.xcassets in Resources */,
 				A09B6A0922D49EEC00ACA87E /* Main.storyboard in Resources */,
+				A04620D022D4A26100B6DD34 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DA991C35A667AE4B3D383DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UserInterface-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A293C80EE7D6ECB16EA9155 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UserInterface/Pods-UserInterface-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UserInterface/Pods-UserInterface-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UserInterface/Pods-UserInterface-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A09B69FC22D49EEC00ACA87E /* Sources */ = {
@@ -280,6 +352,7 @@
 		};
 		A09B6A1322D49EED00ACA87E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE7B8EBCF26C94D8117A68E4 /* Pods-UserInterface.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +370,7 @@
 		};
 		A09B6A1422D49EED00ACA87E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E97FE641871EC35C28B424C /* Pods-UserInterface.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
