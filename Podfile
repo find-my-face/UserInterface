@@ -9,6 +9,7 @@ target 'UserInterface' do
 pod 'Firebase/Core'
 pod 'Firebase/Storage'
 pod 'Firebase/Firestore'
+pod 'Firebase/Database'
 
 
 
