@@ -35,7 +35,7 @@ class LoginController: UIViewController {
 //    @objc func handleLoginRegister() {
 //        if loginRegisterSegmentedControl.selectedSegmentIndex == 0 {
 //            handleLogin()
-//        } else {
+//        } else {op
 //            handleRegister()
 //        }
 //    }
