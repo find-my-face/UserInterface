@@ -16,6 +16,7 @@
 		A09B6A0B22D49EED00ACA87E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A09B6A0A22D49EED00ACA87E /* Assets.xcassets */; };
 		A09B6A0E22D49EED00ACA87E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09B6A0C22D49EED00ACA87E /* LaunchScreen.storyboard */; };
 		A0E184E822D4E2EC00BCC07A /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E184E722D4E2EC00BCC07A /* LoginController.swift */; };
+		A0E184EA22D5F3E500BCC07A /* LoginController+handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E184E922D5F3E500BCC07A /* LoginController+handlers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		A09B6A0D22D49EED00ACA87E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A09B6A0F22D49EED00ACA87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0E184E722D4E2EC00BCC07A /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		A0E184E922D5F3E500BCC07A /* LoginController+handlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginController+handlers.swift"; sourceTree = "<group>"; };
 		DE7B8EBCF26C94D8117A68E4 /* Pods-UserInterface.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UserInterface.debug.xcconfig"; path = "Target Support Files/Pods-UserInterface/Pods-UserInterface.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +94,7 @@
 			children = (
 				A0E184E722D4E2EC00BCC07A /* LoginController.swift */,
 				A09B6A0522D49EEC00ACA87E /* ViewController.swift */,
+				A0E184E922D5F3E500BCC07A /* LoginController+handlers.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				A0E184E822D4E2EC00BCC07A /* LoginController.swift in Sources */,
 				A04620D222D4A9F600B6DD34 /* Task.swift in Sources */,
 				A09B6A0422D49EEC00ACA87E /* AppDelegate.swift in Sources */,
+				A0E184EA22D5F3E500BCC07A /* LoginController+handlers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
