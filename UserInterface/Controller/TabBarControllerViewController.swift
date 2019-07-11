@@ -14,11 +14,11 @@ class TabBarControllerViewController: UITabBarController {
         super.viewDidLoad()
         let homeVC = HomeController()
         
-        homeVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
+        homeVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "round-home-24px"),  tag: 0)
         
         let favVC = FavouritesController()
         
-        favVC.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 2)
+        favVC.tabBarItem = UITabBarItem(title: "Favorites", image: UIImage(named: "round-favorites-24px"), tag: 2)
         
         let tabBarList = [homeVC, favVC]
         
