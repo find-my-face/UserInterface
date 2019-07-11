@@ -83,6 +83,8 @@ extension LoginController: FUIAuthDelegate {
         //        authDataResult?.user.uid
         
 //        performSegue(withIdentifier: "goHome", sender: self)
+        let goHome = HomeController()
+        present(goHome, animated: true, completion: nil)
     }
 }
 

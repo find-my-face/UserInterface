@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A20668C22D73985006FA69E /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A20668B22D73985006FA69E /* HomeController.swift */; };
+		1A20669022D77372006FA69E /* FavouritesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A20668F22D77372006FA69E /* FavouritesController.swift */; };
+		1A20669222D774CE006FA69E /* TabBarControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A20669122D774CE006FA69E /* TabBarControllerViewController.swift */; };
 		76EFC26E8606232AB73E3C23 /* Pods_UserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD1CA09623A2C71DEE9E39F /* Pods_UserInterface.framework */; };
 		9351870D22D5FAA500EBE346 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9351870C22D5FAA500EBE346 /* GoogleService-Info.plist */; };
 		A04620D222D4A9F600B6DD34 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04620D122D4A9F600B6DD34 /* Task.swift */; };
@@ -18,6 +21,9 @@
 
 /* Begin PBXFileReference section */
 		0E97FE641871EC35C28B424C /* Pods-UserInterface.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UserInterface.release.xcconfig"; path = "Target Support Files/Pods-UserInterface/Pods-UserInterface.release.xcconfig"; sourceTree = "<group>"; };
+		1A20668B22D73985006FA69E /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		1A20668F22D77372006FA69E /* FavouritesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesController.swift; sourceTree = "<group>"; };
+		1A20669122D774CE006FA69E /* TabBarControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerViewController.swift; sourceTree = "<group>"; };
 		6DD1CA09623A2C71DEE9E39F /* Pods_UserInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UserInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9351870C22D5FAA500EBE346 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A04620D122D4A9F600B6DD34 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
@@ -86,6 +92,9 @@
 			isa = PBXGroup;
 			children = (
 				A0E184E722D4E2EC00BCC07A /* LoginController.swift */,
+				1A20668B22D73985006FA69E /* HomeController.swift */,
+				1A20668F22D77372006FA69E /* FavouritesController.swift */,
+				1A20669122D774CE006FA69E /* TabBarControllerViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -232,8 +241,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A20669222D774CE006FA69E /* TabBarControllerViewController.swift in Sources */,
+				1A20668C22D73985006FA69E /* HomeController.swift in Sources */,
 				A0E184E822D4E2EC00BCC07A /* LoginController.swift in Sources */,
 				A04620D222D4A9F600B6DD34 /* Task.swift in Sources */,
+				1A20669022D77372006FA69E /* FavouritesController.swift in Sources */,
 				A09B6A0422D49EEC00ACA87E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
