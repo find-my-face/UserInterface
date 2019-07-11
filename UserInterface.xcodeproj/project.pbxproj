@@ -11,11 +11,9 @@
 		9351870D22D5FAA500EBE346 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9351870C22D5FAA500EBE346 /* GoogleService-Info.plist */; };
 		A04620D222D4A9F600B6DD34 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04620D122D4A9F600B6DD34 /* Task.swift */; };
 		A09B6A0422D49EEC00ACA87E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09B6A0322D49EEC00ACA87E /* AppDelegate.swift */; };
-		A09B6A0922D49EEC00ACA87E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09B6A0722D49EEC00ACA87E /* Main.storyboard */; };
 		A09B6A0B22D49EED00ACA87E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A09B6A0A22D49EED00ACA87E /* Assets.xcassets */; };
 		A09B6A0E22D49EED00ACA87E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09B6A0C22D49EED00ACA87E /* LaunchScreen.storyboard */; };
 		A0E184E822D4E2EC00BCC07A /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E184E722D4E2EC00BCC07A /* LoginController.swift */; };
-		A0E184EA22D5F3E500BCC07A /* LoginController+handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E184E922D5F3E500BCC07A /* LoginController+handlers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,12 +23,10 @@
 		A04620D122D4A9F600B6DD34 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		A09B6A0022D49EEC00ACA87E /* UserInterface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserInterface.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A09B6A0322D49EEC00ACA87E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A09B6A0822D49EEC00ACA87E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A09B6A0A22D49EED00ACA87E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A09B6A0D22D49EED00ACA87E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A09B6A0F22D49EED00ACA87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0E184E722D4E2EC00BCC07A /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
-		A0E184E922D5F3E500BCC07A /* LoginController+handlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginController+handlers.swift"; sourceTree = "<group>"; };
 		DE7B8EBCF26C94D8117A68E4 /* Pods-UserInterface.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UserInterface.debug.xcconfig"; path = "Target Support Files/Pods-UserInterface/Pods-UserInterface.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,7 +74,6 @@
 				A0E184E622D4E2B100BCC07A /* Controller */,
 				A09B6A0322D49EEC00ACA87E /* AppDelegate.swift */,
 				A04620D122D4A9F600B6DD34 /* Task.swift */,
-				A09B6A0722D49EEC00ACA87E /* Main.storyboard */,
 				A09B6A0A22D49EED00ACA87E /* Assets.xcassets */,
 				A09B6A0C22D49EED00ACA87E /* LaunchScreen.storyboard */,
 				A09B6A0F22D49EED00ACA87E /* Info.plist */,
@@ -91,7 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				A0E184E722D4E2EC00BCC07A /* LoginController.swift */,
-				A0E184E922D5F3E500BCC07A /* LoginController+handlers.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -117,6 +111,7 @@
 				A09B69FD22D49EEC00ACA87E /* Frameworks */,
 				A09B69FE22D49EEC00ACA87E /* Resources */,
 				5A293C80EE7D6ECB16EA9155 /* [CP] Embed Pods Frameworks */,
+				3C14025CCFCD904BC33BFC0F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,7 +163,6 @@
 				A09B6A0E22D49EED00ACA87E /* LaunchScreen.storyboard in Resources */,
 				A09B6A0B22D49EED00ACA87E /* Assets.xcassets in Resources */,
 				9351870D22D5FAA500EBE346 /* GoogleService-Info.plist in Resources */,
-				A09B6A0922D49EEC00ACA87E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +189,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C14025CCFCD904BC33BFC0F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UserInterface/Pods-UserInterface-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UserInterface/Pods-UserInterface-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UserInterface/Pods-UserInterface-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5A293C80EE7D6ECB16EA9155 /* [CP] Embed Pods Frameworks */ = {
@@ -224,21 +235,12 @@
 				A0E184E822D4E2EC00BCC07A /* LoginController.swift in Sources */,
 				A04620D222D4A9F600B6DD34 /* Task.swift in Sources */,
 				A09B6A0422D49EEC00ACA87E /* AppDelegate.swift in Sources */,
-				A0E184EA22D5F3E500BCC07A /* LoginController+handlers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A09B6A0722D49EEC00ACA87E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A09B6A0822D49EEC00ACA87E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A09B6A0C22D49EED00ACA87E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
